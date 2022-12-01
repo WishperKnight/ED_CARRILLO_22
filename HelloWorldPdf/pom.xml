@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>es.iescarrillo.daw.endes</groupId>
+  <artifactId>HelloWorldPdf</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>HelloWorldPdf</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+ 	 <itext.version>7.2.4</itext.version>
+ 	 <maven.compiler.source>19</maven.compiler.source>
+    <maven.compiler.target>19</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>com.itextpdf</groupId>
+        <artifactId>kernel</artifactId>
+        <version>${itext.version}</version>
+    </dependency>
+	
+    <dependency>
+        <groupId>com.itextpdf</groupId>
+        <artifactId>io</artifactId>
+        <version>${itext.version}</version>
+    </dependency>
+	
+    <dependency>
+        <groupId>com.itextpdf</groupId>
+        <artifactId>layout</artifactId>
+        <version>${itext.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.itextpdf</groupId>
+        <artifactId>pdfa</artifactId>
+        <version>${itext.version}</version>
+    </dependency>
+   
+  </dependencies>
+  <build>
+	  <plugins>
+	
+	  		<plugin>
+	  			<groupId>org.apache.maven.plugins</groupId>
+	  			<artifactId>maven-jar-plugin</artifactId>
+	  			<version>3.1.0</version>
+	  			<configuration>
+	  				<archive>
+	  					<manifest>
+	  						<mainClass>es.iescarillo.daw.endes.HelloWorldPdf.App</mainClass>
+	  					</manifest>
+	  				</archive>
+	  			</configuration>
+	  		</plugin>
+
+	  		<plugin>
+	  			<groupId>com.itextpdf</groupId>
+	  			<artifactId>kernel</artifactId>
+	  			<version>7.0.0</version>
+	  		</plugin>
+	  </plugins>
+	 </build>
+	 <repositories>
+  <repository>
+    <id>itext-releases</id>
+    <name>iText Repository - releases</name>
+    <url>https://repo.itextsupport.com/releases</url>
+  </repository>
+</repositories>
+</project>
