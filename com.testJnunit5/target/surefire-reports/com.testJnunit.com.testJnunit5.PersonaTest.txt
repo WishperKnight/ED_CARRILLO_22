@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.testJnunit.com.testJnunit5.PersonaTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.129 s <<< FAILURE! - in com.testJnunit.com.testJnunit5.PersonaTest
+testEdad1  Time elapsed: 0.021 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.testJnunit.com.testJnunit5.PersonaTest.testEdad1(PersonaTest.java:33)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at com.testJnunit.com.testJnunit5.PersonaTest.testEdad1(PersonaTest.java:33)
+
+testEdad2  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.testJnunit.com.testJnunit5.PersonaTest.testEdad2(PersonaTest.java:42)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at com.testJnunit.com.testJnunit5.PersonaTest.testEdad2(PersonaTest.java:42)
+
+testEdad  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.testJnunit.com.testJnunit5.PersonaTest.testEdad(PersonaTest.java:24)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at com.testJnunit.com.testJnunit5.PersonaTest.testEdad(PersonaTest.java:24)
+
